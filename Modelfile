@@ -1,0 +1,7 @@
+# Ollama: from the project root run:
+#   ollama create mistral-local -f Modelfile
+# Then start the API (ollama serve) if needed and use provider "local" in config/agent_models.yaml
+FROM ./mistral-7b-instruct-v0.3-q4_k_m.gguf
+
+PARAMETER temperature 0.45
+PARAMETER num_ctx 8192

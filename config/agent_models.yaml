@@ -1,0 +1,54 @@
+# In-process Mistral 7B GGUF via llama-cpp-python + LangChain ChatLlamaCpp (no separate server).
+# Install: pip install llama-cpp-python
+# Optional env: LLAMA_CPP_N_GPU_LAYERS, LLAMA_CPP_N_THREADS, LLAMA_CPP_N_CTX, LLAMA_CPP_MODEL_PATH
+#
+# One shared model load for all agents (see src/llm/llamacpp_singleton.py).
+#
+# Alternatives: provider: local (llama-server / Ollama HTTP), provider: openrouter
+
+x-mistral-gguf: &mistral_gguf
+  model_path: mistral-7b-instruct-v0.3-q4_k_m.gguf
+  temperature: 0.45
+  max_tokens: 8192
+  n_ctx: 8192
+  n_gpu_layers: 0
+  streaming: false
+  verbose: false
+
+agents:
+  hypothesis_agent:
+    provider: llamacpp
+    model_config:
+      <<: *mistral_gguf
+  process_agent:
+    provider: llamacpp
+    model_config:
+      <<: *mistral_gguf
+  visualization_agent:
+    provider: llamacpp
+    model_config:
+      <<: *mistral_gguf
+  code_agent:
+    provider: llamacpp
+    model_config:
+      <<: *mistral_gguf
+  search_agent:
+    provider: llamacpp
+    model_config:
+      <<: *mistral_gguf
+  report_agent:
+    provider: llamacpp
+    model_config:
+      <<: *mistral_gguf
+  quality_review_agent:
+    provider: llamacpp
+    model_config:
+      <<: *mistral_gguf
+  note_agent:
+    provider: llamacpp
+    model_config:
+      <<: *mistral_gguf
+  refiner_agent:
+    provider: llamacpp
+    model_config:
+      <<: *mistral_gguf

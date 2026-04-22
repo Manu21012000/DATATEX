@@ -1,0 +1,49 @@
+# Your data storage path(required)
+WORKING_DIRECTORY =./data/
+
+# Conda environment name(required)
+CONDA_ENV = datagen
+
+# ChromeDriver executable path(required)
+CHROMEDRIVER_PATH =./chromedriver-linux64/chromedriver
+
+# Firecrawl API key (optional)
+# Note: If this key is missing, query capabilities may be reduced
+FIRECRAWL_API_KEY = XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+# Hugging Face token (required when using provider: huggingface in config/agent_models.yaml)
+# Create at https://huggingface.co/settings/tokens — enable Inference Providers if prompted
+# Same value may be set as HF_TOKEN or HUGGING_FACE_HUB_TOKEN
+HF_TOKEN = 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
+
+# In-process GGUF (when using provider: llamacpp in config/agent_models.yaml)
+# LLAMA_CPP_MODEL_PATH=   (optional override; default is model_path in YAML relative to project root)
+# LLAMA_CPP_N_GPU_LAYERS=0
+# LLAMA_CPP_N_THREADS=
+# LLAMA_CPP_N_CTX=8192
+# LLAMA_CPP_VERBOSE=false
+
+# Local LLM HTTP (when using provider: local — llama-server / Ollama)
+# LOCAL_LLM_BASE_URL=http://127.0.0.1:8080/v1
+# LOCAL_LLM_API_KEY=not-needed
+
+# OpenRouter (when using provider: openrouter in config/agent_models.yaml)
+# Keys: https://openrouter.ai/keys — optional OPENROUTER_HTTP_REFERER / OPENROUTER_APP_TITLE
+OPENROUTER_API_KEY = XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+# OpenAI API key (optional)
+OPENAI_API_KEY = XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+# Anthropic API key (optional)
+ANTHROPIC_API_KEY = XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+# Google API key (optional)
+GOOGLE_API_KEY = XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+# LangChain API key (optional)
+# Used for monitoring the processing
+LANGCHAIN_API_KEY = XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+# MCP (Model Context Protocol) Settings (optional)
+# Tavily API key for web-search MCP server
+TAVILY_API_KEY = XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+# GitHub token for github MCP server
+GITHUB_TOKEN = XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
