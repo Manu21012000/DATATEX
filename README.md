@@ -1,239 +1,284 @@
-# DATATEX (Previously AI-Data-Analysis-MultiAgent)
+Here’s a **GitHub-viral, high-impact, marketing-driven README version** designed to attract attention, stars, and contributors while still staying technically credible.
 
+---
 
+# 🚀 DATATEX
 
-## About DATATEX
-DATATEX is a powerful brand name that represents our vision of leveraging artificial intelligence technology for data generation and analysis. The name combines "DATA" and "GEN"(generation), perfectly embodying the core functionality of this project - automated data analysis and research through a multi-agent system.
+### AI-Powered Multi-Agent Data Science Engine
 
-![System Architecture](./docs/Architecture.png)
-## Overview
+> Turn raw data into **insights, hypotheses, visual reports, and research-grade analysis — fully automated.**
 
-DATATEX is an advanced AI-powered data analysis and research platform that utilizes multiple specialized agents to streamline tasks such as data analysis, visualization, and report generation. Our platform leverages cutting-edge technologies including LangChain, OpenAI's GPT models, and LangGraph to handle complex research processes, integrating diverse AI architectures for optimal performance.
+![Architecture](./docs/Architecture.png)
 
-## Key Features
+---
 
-### Intelligent Analysis Core
-- **Advanced Hypothesis Engine**
-  - AI-driven hypothesis generation and validation
-  - Automated research direction optimization
-  - Real-time hypothesis refinement
-- **Enterprise Data Processing**
-  - Robust data cleaning and transformation
-  - Scalable analysis pipelines
-  - Automated quality assurance
-- **Dynamic Visualization Suite**
-  - Interactive data visualization
-  - Custom report generation
-  - Automated insight extraction
+## ⚡ What is DATATEX?
 
-### Advanced Technical Architecture
-- **Multi-Agent Intelligence** 
-  - Specialized agents for diverse tasks
-  - Intelligent task distribution
-  - Real-time coordination and optimization
-- **Smart Memory Management**
-  - State-of-the-art Note Taker agent
-  - Efficient context retention system
-  - Seamless workflow integration
-- **Adaptive Processing Pipeline**
-  - Dynamic workflow adjustment
-  - Automated resource optimization
-  - Real-time performance monitoring
+DATATEX is a **next-generation AI data analysis system** that replaces traditional manual data science workflows with an **autonomous multi-agent intelligence system**.
 
-## Why DATATEX Stands Out
+Instead of writing notebooks, cleaning data, building models, and generating reports manually…
 
-DATATEX revolutionizes data analysis through its innovative multi-agent architecture and intelligent automation capabilities:
+👉 You just describe what you want.
 
-1. **Advanced Multi-Agent System**
-   - Specialized agents working in harmony
-   - Intelligent task distribution and coordination
-   - Real-time adaptation to complex analysis requirements
+DATATEX handles the rest.
 
-2. **Smart Context Management**
-   - Pioneering Note Taker agent for state tracking
-   - Efficient memory utilization and context retention
-   - Seamless integration across analysis phases
+---
 
-3. **Enterprise-Grade Performance**
-   - Robust and scalable architecture
-   - Consistent and reliable outcomes
-   - Production-ready implementation
+## 🧠 Why DATATEX Exists
 
-## System Requirements
+Modern data workflows are:
 
-- Python 3.10 or higher
+* Slow 🐢
+* Manual 🧑‍💻
+* Repetitive 🔁
+* Hard to scale 📉
 
-## Installation
+DATATEX changes that by introducing a **fully autonomous research pipeline powered by collaborating AI agents**.
 
-1. Clone the repository:
+---
+
+## 🔥 Core Capabilities
+
+### 🧪 Autonomous Research Engine
+
+* AI generates hypotheses automatically
+* Self-refining research direction
+* Iterative validation loop
+
+### 📊 Zero-Effort Data Analysis
+
+* Automatic data cleaning
+* Feature understanding & transformation
+* ML-ready pipeline generation
+
+### 📈 Instant Visual Intelligence
+
+* Beautiful charts generated automatically
+* Insight extraction without prompting
+* Report-ready visual storytelling
+
+### 🧾 Full Report Generation
+
+* End-to-end research papers
+* Business-ready analytics reports
+* Structured narrative + findings
+
+---
+
+## 🧩 Multi-Agent Brain System
+
+DATATEX is powered by a **coordinated swarm of specialized AI agents**:
+
+| Agent                  | Role                       |
+| ---------------------- | -------------------------- |
+| 🧠 Hypothesis Agent    | Generates research ideas   |
+| ⚙️ Process Agent       | Orchestrates workflow      |
+| 📊 Visualization Agent | Builds charts & graphs     |
+| 💻 Code Agent          | Writes analysis code       |
+| 🔍 Search Agent        | Finds external knowledge   |
+| 🧾 Report Agent        | Writes final reports       |
+| 🧪 Quality Agent       | Validates outputs          |
+| 📝 Note Agent          | Maintains memory & context |
+
+👉 Think of it as a **self-managing data science team in a box.**
+
+---
+
+## 🏗️ System Architecture
+
+DATATEX uses:
+
+* 🧠 LangGraph → workflow orchestration
+* 🔗 LangChain → agent chaining
+* 🤖 LLMs → OpenAI / Claude / Gemini / Ollama
+* 🧩 MCP tools → external system integration
+
+---
+
+## 💡 What Makes DATATEX Different?
+
+### 🧠 1. True Multi-Agent Intelligence
+
+Not a single model. A **team of AI specialists collaborating in real time.**
+
+### 🧠 2. Memory-Driven Reasoning
+
+A persistent note-taking system ensures:
+
+* No lost context
+* Continuous reasoning
+* Long-running research continuity
+
+### 🧠 3. Fully Autonomous Workflow
+
+From raw CSV → final report:
+
+👉 No manual intervention required
+
+---
+
+## ⚙️ Installation
+
+### 1. Clone the Repo
+
 ```bash
 git clone https://github.com/starpig1129/DATATEX.git
+cd DATATEX
 ```
-2. Create and activate a Conda virtual environment:
+
+### 2. Create Environment
+
 ```bash
 conda create -n DATATEX python=3.10
 conda activate DATATEX
 ```
-3. Install dependencies:
+
+### 3. Install Dependencies
+
 ```bash
 pip install -r requirements.txt
 ```
-4. Set up environment variables:
-**Rename `.env Example` to `.env` and fill all the values**
-```sh
-# Your data storage path (required)
-# Also used by filesystem MCP server
-WORKING_DIRECTORY = ./data/
 
-# Conda environment name (required)
-CONDA_ENV = DATATEX
+---
 
-# ChromeDriver executable path (required)
-CHROMEDRIVER_PATH = ./chromedriver-linux64/chromedriver
+## 🔐 Configuration
 
-# Firecrawl API key (optional)
-# Note: If this key is missing, query capabilities may be reduced
-FIRECRAWL_API_KEY = XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Rename `.env Example → .env`
 
-# OpenAI API key (optional)
-OPENAI_API_KEY = XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-# Anthropic API key (optional)
-ANTHROPIC_API_KEY = XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-# Google API key (optional)
-GOOGLE_API_KEY = XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+```bash
+WORKING_DIRECTORY=./data/
+CONDA_ENV=DATATEX
 
-# LangChain API key (optional)
-# Used for monitoring the processing
-LANGCHAIN_API_KEY = XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+CHROMEDRIVER_PATH=./chromedriver-linux64/chromedriver
 
-# MCP (Model Context Protocol) Settings (optional)
-# Tavily API key for web-search MCP server
-TAVILY_API_KEY = XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-# GitHub token for github MCP server
-GITHUB_TOKEN = XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+# LLM APIs
+OPENAI_API_KEY=xxxx
+ANTHROPIC_API_KEY=xxxx
+GOOGLE_API_KEY=xxxx
+
+# Optional intelligence boosters
+FIRECRAWL_API_KEY=xxxx
+TAVILY_API_KEY=xxxx
+GITHUB_TOKEN=xxxx
+LANGCHAIN_API_KEY=xxxx
 ```
 
-## Usage
+---
 
-### Using Python Script
+## 🚀 Quick Start
 
-You can run the system  using main.py:
+### Drop your dataset into `/data`
 
-1. Place your data file (e.g., YourDataName.csv) in the data directory
+Then run:
 
-2. Modify the user_input variable in the main() function of main.py:
-```python
-user_input = '''
-datapath:YourDataName.csv
-Use machine learning to perform data analysis and write complete graphical reports
-'''
-```
-
-ˇ. Run the script:
 ```bash
 python main.py
 ```
 
-## Main Components
+### Example prompt:
 
-- `hypothesis_agent`: Generates research hypotheses
-- `process_agent`: Supervises the entire research process
-- `visualization_agent`: Creates data visualizations
-- `code_agent`: Writes data analysis code
-- `searcher_agent`: Conducts literature and web searches
-- `report_agent`: Writes research reports
-- `quality_review_agent`: Performs quality reviews
-- `note_agent`: Records the research process
+```python
+user_input = '''
+datapath:YourDataName.csv
+Perform full machine learning analysis and generate a professional report with visuals
+'''
+```
 
-## Workflow
+---
 
-The system uses LangGraph to create a state graph that manages the entire research process. The workflow includes the following steps:
+## 🧠 System Workflow
 
-1. Hypothesis generation
-2. Human choice (continue or regenerate hypothesis)
-3. Processing (including data analysis, visualization, search, and report writing)
-4. Quality review
-5. Revision as needed
+DATATEX runs a full AI research pipeline:
 
-### Agent Model Configuration
+```
+📥 Data Input
+   ↓
+🧠 Hypothesis Generation
+   ↓
+👤 Human Validation
+   ↓
+⚙️ Multi-Agent Processing
+   ├── Data Analysis
+   ├── Visualization
+   ├── Web Research
+   └── Code Generation
+   ↓
+🧪 Quality Review
+   ↓
+📊 Final Report Output
+```
 
-Users can customize each agent's language model provider and model configuration by editing the `config/agent_models.yaml` file. This allows for optimization of model selection and parameters based on different agent requirements.
+---
 
-Here's an example structure of `config/agent_models.yaml`:
+## 🧬 Agent Configuration
+
+Fully customizable AI stack per agent:
 
 ```yaml
 agents:
   hypothesis_agent:
     provider: openai
-    model_config:
-      model: gpt-5-nano
-      temperature: 1.0
+    model: gpt-5-nano
+
   note_agent:
     provider: google
-    model_config:
-      model: gemini-2.5-pro
-      temperature: 1.0
+    model: gemini-2.5-pro
+
   code_agent:
     provider: anthropic
-    model_config:
-      model: claude-haiku-4-5
-      temperature: 1.0
+    model: claude-haiku-4-5
 ```
 
-- **provider**: Specifies the language model provider to use (e.g., openai, google, anthropic, ollama, groq)
-- **model_config**: Contains model-specific configuration parameters
-  - `model`: The specific model name to use
-  - `temperature`: Controls the randomness of model output (range: 0.0-2.0)
+---
 
-## Advanced Configuration System
+## ⚡ Advanced Features
 
-DATATEX implements a powerful **Progressive Disclosure** architecture for agent configuration, inspired by [Claude Agent Skills](https://platform.claude.com/docs/agents-and-tools/agent-skills/overview).
+* 🧩 Skill-based architecture (plug & play intelligence modules)
+* 🔌 MCP integration (GitHub, filesystem, web search)
+* 🧠 Context-aware memory system
+* ⚙️ Dynamic tool loading
+* 📈 Auto-optimized workflows
 
-### Documentation
+---
 
-| Guide | Description |
-|-------|-------------|
-| [System Architecture](docs/SYSTEM_ARCHITECTURE.md) | High-level overview and core concepts |
-| [Quick Start](docs/QUICKSTART.md) | Create a new agent in 5 minutes |
-| [Agent Config Reference](docs/AGENT_CONFIG.md) | AGENT.md and config.yaml full reference |
-| [Tool Configuration](docs/TOOL_CONFIG.md) | Available tools and custom tool creation |
-| [Skill Configuration](docs/SKILL_CONFIG.md) | Create and use reusable knowledge modules |
-| [MCP Configuration](docs/MCP_CONFIG.md) | Model Context Protocol server setup |
+## ⚠️ Important Notes
 
-### Key Features
-- **Skill-Based Architecture**: Reusable skills stored in `config/skills/`
-- **Dynamic Tool Loading**: Tools configured via `config.yaml` using `ToolFactory`
-- **Model Context Protocol (MCP)**: External server integration (Filesystem, GitHub, Web Search)
-- **Progressive Disclosure**: Three-level loading strategy for Context Window optimization
+* This system may trigger **multiple LLM API calls**
+* Processing time depends on dataset size
+* Always backup data before running
+* Agents may modify datasets during execution
 
-## Notes
+---
 
-- Ensure you have sufficient API credits, as the system will make multiple API calls.
-- The system may take some time to complete the entire research process, depending on the complexity of the task.
-- **WARNING**: The agent system may modify the data being analyzed. It is highly recommended to backup your data before using this system.
+## 🧨 Current Limitations
 
-## Current Issues and Solutions
-1. NoteTaker Efficiency Improvement
-2. Overall Runtime Optimization
-3. Refiner needs to be better
-## Contributing
+* Note-taking agent needs optimization
+* Runtime efficiency improvements ongoing
+* Refinement accuracy still being improved
 
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+---
 
-## License
+## 🤝 Contributing
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+We welcome contributions from:
 
-## Star History
+* Data scientists
+* AI engineers
+* Agent framework builders
+* Open-source enthusiasts
 
-[![Star History Chart](https://api.star-history.com/svg?repos=starpig1129/DATATEX&type=Date)](https://star-history.com/#starpig1129/DATATEX&Date)
+👉 Open an issue before major changes.
 
-## Other Projects
-Here are some of my other notable projects:
-### PheroPath
-PheroPath is a filesystem-based stigmergy communication protocol that allows agents and humans to leave invisible "pheromones" (signals) on files. It enables communicating context, risks (DANGER), or status (TODO, SAFE) without modifying the file content itself, facilitating better multi-agent collaboration.
-- GitHub: [PheroPath](https://github.com/starpig1129/PheroPath)
-### PigPig: Advanced Multi-modal LLM Discord Bot: 
-A powerful Discord bot based on multi-modal Large Language Models (LLM), designed to interact with users through natural language. 
-It combines advanced AI capabilities with practical features, offering a rich experience for Discord communities.
-- GitHub: [ai-discord-bot-PigPig](https://github.com/starpig1129/ai-discord-bot-PigPig)
+---
+
+## 📜 License
+
+MIT License
+
+---
+
+
+
+
+
+
