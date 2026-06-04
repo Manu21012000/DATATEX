@@ -1,14 +1,14 @@
-# DATAGEN (Previously AI-Data-Analysis-MultiAgent)
+# DATATEX (Previously AI-Data-Analysis-MultiAgent)
 
-![DATAGEN Banner](./docs/DATAGEN.jpg "DATAGEN Banner")
 
-## About DATAGEN
-DATAGEN is a powerful brand name that represents our vision of leveraging artificial intelligence technology for data generation and analysis. The name combines "DATA" and "GEN"(generation), perfectly embodying the core functionality of this project - automated data analysis and research through a multi-agent system.
+
+## About DATATEX
+DATATEX is a powerful brand name that represents our vision of leveraging artificial intelligence technology for data generation and analysis. The name combines "DATA" and "GEN"(generation), perfectly embodying the core functionality of this project - automated data analysis and research through a multi-agent system.
 
 ![System Architecture](./docs/Architecture.png)
 ## Overview
 
-DATAGEN is an advanced AI-powered data analysis and research platform that utilizes multiple specialized agents to streamline tasks such as data analysis, visualization, and report generation. Our platform leverages cutting-edge technologies including LangChain, OpenAI's GPT models, and LangGraph to handle complex research processes, integrating diverse AI architectures for optimal performance.
+DATATEX is an advanced AI-powered data analysis and research platform that utilizes multiple specialized agents to streamline tasks such as data analysis, visualization, and report generation. Our platform leverages cutting-edge technologies including LangChain, OpenAI's GPT models, and LangGraph to handle complex research processes, integrating diverse AI architectures for optimal performance.
 
 ## Key Features
 
@@ -40,9 +40,9 @@ DATAGEN is an advanced AI-powered data analysis and research platform that utili
   - Automated resource optimization
   - Real-time performance monitoring
 
-## Why DATAGEN Stands Out
+## Why DATATEX Stands Out
 
-DATAGEN revolutionizes data analysis through its innovative multi-agent architecture and intelligent automation capabilities:
+DATATEX revolutionizes data analysis through its innovative multi-agent architecture and intelligent automation capabilities:
 
 1. **Advanced Multi-Agent System**
    - Specialized agents working in harmony
@@ -67,12 +67,12 @@ DATAGEN revolutionizes data analysis through its innovative multi-agent architec
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/starpig1129/DATAGEN.git
+git clone https://github.com/starpig1129/DATATEX.git
 ```
 2. Create and activate a Conda virtual environment:
 ```bash
-conda create -n datagen python=3.10
-conda activate datagen
+conda create -n DATATEX python=3.10
+conda activate DATATEX
 ```
 3. Install dependencies:
 ```bash
@@ -86,7 +86,7 @@ pip install -r requirements.txt
 WORKING_DIRECTORY = ./data/
 
 # Conda environment name (required)
-CONDA_ENV = datagen
+CONDA_ENV = DATATEX
 
 # ChromeDriver executable path (required)
 CHROMEDRIVER_PATH = ./chromedriver-linux64/chromedriver
@@ -187,7 +187,7 @@ agents:
 
 ## Advanced Configuration System
 
-DATAGEN implements a powerful **Progressive Disclosure** architecture for agent configuration, inspired by [Claude Agent Skills](https://platform.claude.com/docs/agents-and-tools/agent-skills/overview).
+DATATEX implements a powerful **Progressive Disclosure** architecture for agent configuration, inspired by [Claude Agent Skills](https://platform.claude.com/docs/agents-and-tools/agent-skills/overview).
 
 ### Documentation
 
@@ -226,7 +226,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=starpig1129/DATAGEN&type=Date)](https://star-history.com/#starpig1129/DATAGEN&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=starpig1129/DATATEX&type=Date)](https://star-history.com/#starpig1129/DATATEX&Date)
 
 ## Other Projects
 Here are some of my other notable projects:
